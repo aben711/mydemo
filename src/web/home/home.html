@@ -1,0 +1,19 @@
+<div ms-controller="home">
+    <div ms-repeat-el = "menus">
+        <div class="col-md-12" >
+            <div class="col-md-1 col-lg-1 col-xs-12 col-sm-12">
+                <h3>{{el.name}}</h3> 
+            </div>
+            <div ms-repeat-item ="el.items" class="col-md-2 col-lg-2 col-xs-6 col-sm-3">
+                <div class="top-news">
+                    <a ms-attr-href="#!/{{item.no}}" class="btn blue-madison" >
+                        <div>
+                            {{item.name}}
+                        </div>
+                    </a>
+                </div> 
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
